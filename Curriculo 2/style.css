@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: black;
+}
+.navBarConteiner {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: black;
+  position: fixed;
+}
+.buttonsGroup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-right: 50px;
+  justify-content: flex-end;
+  gap: 30px;
+}
+.buttons {
+  display: flex;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 8px;
+  color: white;
+  border-radius: 7px;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buttons:hover {
+  border-color: white;
+  background-color: white;
+  color: black;
+}
+.conteinerContent{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.imgContent{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 150px;
+  border: 2px white solid;
+}
+.txtContent{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.aboutMe {
+  display: flex;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+  color: white;
+}
+.titleProject {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.txtTitle{
+  display: flex;
+  color: white;
+  font-size: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.projetosConteiner{
+  display: grid;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-template-areas: 
+  "item1 item2"
+  "item3 item4"
+}
+.item1{
+  display: grid;
+  grid-area: item1;
+  border: 5px white solid;
+  width: 550px;
+  height: 350px;
+  margin-left: 200px;
+}
+.item2{
+  display: grid;
+  grid-area: item2;
+  width: 550px;
+  height: 350px;
+  border: 5px white solid;
+}
+.item3{
+  display: grid;
+  grid-area: item3;
+  width: 550px;
+  height: 350px;
+  margin-left: 200px;
+  margin-top: 30px;
+  border: 5px white solid;
+}
+.item4{
+  display: grid;
+  grid-area: item4;
+  width: 550px;
+  height: 350px;
+  margin-top: 30px;
+  border: 5px white solid;
+}
+.contactConteiner{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.img{
+  width: 550px;
+  height: 350px;
+}
+.imgButton{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.imgButton:hover {
+  border-color: 3px white solid;
+  background-color: white;
+}
+.footer{
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(169, 169, 169, 0.3);
+}
+.footerTxt{
+  color: white;
+}
